@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>DynamicFormInterface</h1>
+
+<p>使用 Active Record 的 <a href="http://api.rubyonrails.org/classes/ActiveRecord/NestedAttributes/ClassMethods.html">Nested Attributes</a> 機制提供 <a href="http://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model">EAV</a> 功能, 並且支援多語系的欄位名稱</p>
+
+<h2>Model 設定方式範例</h2>
+
+<p>在需要定義欄位的 Model 中添加, ex. 活動報名人表單</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>class</span> <span class='const'>Event</span>
+  <span class='id identifier rubyid_include'>include</span> <span class='const'>DynamicFormInterface</span>
+  <span class='id identifier rubyid_acts_as_form_hosted'>acts_as_form_hosted</span>
+<span class='kw'>end</span>
+</code></pre>
+
+<p>在紀錄資料的 Model 中添加</p>
+
+<pre class="code ruby"><code class="ruby"><span class='kw'>class</span> <span class='const'>Attend</span>
+  <span class='id identifier rubyid_include'>include</span> <span class='const'>DynamicFormInterface</span>
+  <span class='id identifier rubyid_acts_as_form_interface'>acts_as_form_interface</span> <span class='symbol'>:event</span>
+<span class='kw'>end</span>
+</code></pre>
+
+<h2>增加欄位範例</h2>
+
+<pre class="code ruby"><code class="ruby">  @event.build_form_fields [ {type: :text, title:&#39;新文字欄位&#39;}, 
+                             {type: :radio, :title: &quot;性別&quot;, 
+                              :custom_options_attributes =&gt; [ { :name =&gt; &quot;male&quot; }, { :name =&gt; &quot;female&quot; } ] 
+                             }
+                           ]
+
+  @event.build_form_field {type: :text, :title =&gt; &#39;新文字欄位&#39;}
+  @event.build_form_field {type: :radio, :title: &quot;性別&quot;, 
+                            :custom_options_attributes =&gt; [ { :name =&gt; &quot;male&quot; }, { :name =&gt; &quot;female&quot; } ] 
+                          }
+</code></pre>
+
+<h2>網頁中的表單範例</h2>
+
+<p>有提供了 <code>render_input</code> 這個 helper 顯示表單欄位</p>
+
+<pre class="code ruby"><code class="ruby">&lt;%= form_for @attendee, :html =&gt; {:multipart =&gt; true} do |f|%&gt;
+    &lt;% @attendee.form_fields.each do | field |%&gt;
+        &lt;%=render_input @attendee, field%&gt;
+    &lt;% end %&gt;
+    &lt;%=f.submit%&gt;
+&lt;% end %&gt;
+</code></pre>
+
+<h2>資料結構說明</h2>
+
+<p>Event 有定義一組欄位資料, Attendee 屬於 Event 且需要填寫 Event 定義的欄位資料</p>
+
+<ul>
+<li>Event has many Attendee</li>
+<li><p>Event has many FormField</p></li>
+<li><p>Attendee belongs to Event</p></li>
+<li><p>Attendee has many FieldValue</p></li>
+<li><p>FormField belongs to Event</p></li>
+<li><p>FormField has many FieldValue</p></li>
+<li><p>FormField has many CustomOptions # 單選多選欄位</p></li>
+<li><p>FieldValue belongs to Attendee</p></li>
+<li><p>FieldValue belongs to FormField</p></li>
+</ul>
+</div></div>
+
+    <div id="footer">
+  Generated on Thu Aug 22 15:29:16 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

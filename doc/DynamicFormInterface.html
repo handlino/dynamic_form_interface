@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: DynamicFormInterface
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (D)</a> &raquo;
+    
+    
+    <span class="title">DynamicFormInterface</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: DynamicFormInterface
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/dynamic_form_interface.rb<span class="defines">,<br />
+  lib/dynamic_form_interface/engine.rb,<br /> lib/generators/dynamic_form_interface/migration_generator.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="DynamicFormInterface/ClassMethods.html" title="DynamicFormInterface::ClassMethods (module)">ClassMethods</a></span>, <span class='object_link'><a href="DynamicFormInterface/DynamicFormInterfaceHelper.html" title="DynamicFormInterface::DynamicFormInterfaceHelper (module)">DynamicFormInterfaceHelper</a></span>, <span class='object_link'><a href="DynamicFormInterface/Generators.html" title="DynamicFormInterface::Generators (module)">Generators</a></span>, <span class='object_link'><a href="DynamicFormInterface/HostedInstanceMethods.html" title="DynamicFormInterface::HostedInstanceMethods (module)">HostedInstanceMethods</a></span>, <span class='object_link'><a href="DynamicFormInterface/InstanceMethods.html" title="DynamicFormInterface::InstanceMethods (module)">InstanceMethods</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="DynamicFormInterface/ColumnFile.html" title="DynamicFormInterface::ColumnFile (class)">ColumnFile</a></span>, <span class='object_link'><a href="DynamicFormInterface/ColumnOption.html" title="DynamicFormInterface::ColumnOption (class)">ColumnOption</a></span>, <span class='object_link'><a href="DynamicFormInterface/ColumnString.html" title="DynamicFormInterface::ColumnString (class)">ColumnString</a></span>, <span class='object_link'><a href="DynamicFormInterface/ColumnText.html" title="DynamicFormInterface::ColumnText (class)">ColumnText</a></span>, <span class='object_link'><a href="DynamicFormInterface/CustomFileValue.html" title="DynamicFormInterface::CustomFileValue (class)">CustomFileValue</a></span>, <span class='object_link'><a href="DynamicFormInterface/CustomOption.html" title="DynamicFormInterface::CustomOption (class)">CustomOption</a></span>, <span class='object_link'><a href="DynamicFormInterface/CustomOptionValue.html" title="DynamicFormInterface::CustomOptionValue (class)">CustomOptionValue</a></span>, <span class='object_link'><a href="DynamicFormInterface/CustomStringValue.html" title="DynamicFormInterface::CustomStringValue (class)">CustomStringValue</a></span>, <span class='object_link'><a href="DynamicFormInterface/CustomTextValue.html" title="DynamicFormInterface::CustomTextValue (class)">CustomTextValue</a></span>, <span class='object_link'><a href="DynamicFormInterface/Engine.html" title="DynamicFormInterface::Engine (class)">Engine</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldAttachment.html" title="DynamicFormInterface::FieldAttachment (class)">FieldAttachment</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldCheckbox.html" title="DynamicFormInterface::FieldCheckbox (class)">FieldCheckbox</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldDate.html" title="DynamicFormInterface::FieldDate (class)">FieldDate</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldEmail.html" title="DynamicFormInterface::FieldEmail (class)">FieldEmail</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldHtml.html" title="DynamicFormInterface::FieldHtml (class)">FieldHtml</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldRadio.html" title="DynamicFormInterface::FieldRadio (class)">FieldRadio</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldSelect.html" title="DynamicFormInterface::FieldSelect (class)">FieldSelect</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldText.html" title="DynamicFormInterface::FieldText (class)">FieldText</a></span>, <span class='object_link'><a href="DynamicFormInterface/FieldTextarea.html" title="DynamicFormInterface::FieldTextarea (class)">FieldTextarea</a></span>, <span class='object_link'><a href="DynamicFormInterface/FormField.html" title="DynamicFormInterface::FormField (class)">FormField</a></span>, <span class='object_link'><a href="DynamicFormInterface/FormFieldTranslation.html" title="DynamicFormInterface::FormFieldTranslation (class)">FormFieldTranslation</a></span>
+    
+  
+</p>
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#included-class_method" title="included (class method)">+ (Object) <strong>included</strong>(base) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="included-class_method">
+  
+    + (<tt>Object</tt>) <strong>included</strong>(base) 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+5
+6
+7</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 5</span>
+
+<span class='kw'>def</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_included'>included</span><span class='lparen'>(</span><span class='id identifier rubyid_base'>base</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_base'>base</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='symbol'>:extend</span><span class='comma'>,</span> <span class='const'>ClassMethods</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Aug 22 15:29:16 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

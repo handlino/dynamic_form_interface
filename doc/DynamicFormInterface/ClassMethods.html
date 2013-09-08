@@ -1,0 +1,488 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: DynamicFormInterface::ClassMethods
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../DynamicFormInterface.html" title="DynamicFormInterface (module)">DynamicFormInterface</a></span></span>
+     &raquo; 
+    <span class="title">ClassMethods</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: DynamicFormInterface::ClassMethods
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/dynamic_form_interface.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#acts_as_form_hosted-instance_method" title="#acts_as_form_hosted (instance method)">- (Object) <strong>acts_as_form_hosted</strong>(options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>設定 Model 的表單欄位.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#acts_as_form_interface-instance_method" title="#acts_as_form_interface (instance method)">- (Object) <strong>acts_as_form_interface</strong>(form) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>設定 Model 要填寫的標單.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="acts_as_form_hosted-instance_method">
+  
+    - (<tt>Object</tt>) <strong>acts_as_form_hosted</strong>(options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>設定 Model 的表單欄位</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>欄位參數</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:default_fields</span>
+          <span class="type">(<tt>Hash</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>預設欄位內容 </p>
+
+<p>格式</p>
+
+<pre class="code ruby"><code class="ruby">  {
+    &quot;設的欄位名稱&quot; =&gt; {
+       :type  =&gt; 欄位格式
+       :title =&gt; 欄位名稱
+       :is_required =&gt; 是否是必填欄位
+       :auto_build  =&gt; 是否在 Model 建立時自動建立欄位
+       :updateable  =&gt; 欄位是否可更新
+       :destroyable =&gt; 欄位是否可刪除
+       :renameable  =&gt; 欄位是否可更名
+       :custom_options_attributes =&gt; 單選多選欄位型態提供的選項
+     }
+  }
+}
+</code></pre>
+
+<p>範例</p>
+
+<pre class="code ruby"><code class="ruby"><span class='lbrace'>{</span> 
+  <span class='symbol'>:email</span>  <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='symbol'>:type</span>        <span class='op'>=&gt;</span> <span class='symbol'>:email</span><span class='comma'>,</span>
+    <span class='symbol'>:title</span>       <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Email</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='symbol'>:is_required</span> <span class='op'>=&gt;</span> <span class='kw'>true</span><span class='comma'>,</span>
+    <span class='symbol'>:auto_build</span>  <span class='op'>=&gt;</span> <span class='kw'>true</span> <span class='comment'># 自動生成
+</span>  <span class='rbrace'>}</span><span class='comma'>,</span>
+  <span class='symbol'>:gender</span> <span class='op'>=&gt;</span> <span class='lbrace'>{</span>
+    <span class='symbol'>:type</span>        <span class='op'>=&gt;</span> <span class='symbol'>:select</span><span class='comma'>,</span>
+    <span class='symbol'>:title</span>       <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Gender</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
+    <span class='symbol'>:custom_options_attributes</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span> <span class='lbrace'>{</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>male</span><span class='tstring_end'>&quot;</span></span> <span class='rbrace'>}</span><span class='comma'>,</span> <span class='lbrace'>{</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>female</span><span class='tstring_end'>&quot;</span></span> <span class='rbrace'>}</span> <span class='rbracket'>]</span>
+  <span class='rbrace'>}</span>
+<span class='rbrace'>}</span>
+</code></pre>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:field_types</span>
+          <span class="type">(<tt>Array</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>允許使用的欄位格式
+支援下列幾種格式 </p>
+
+<ul>
+<li>:text 字串</li>
+<li>:textarea 文字</li>
+<li>:select 下拉選單</li>
+<li>:radio 單選</li>
+<li>:checkbox 複選</li>
+<li>:email Email</li>
+<li>:html Html 內容</li>
+<li>:attachment 檔案</li>
+<li>:date 時間</li>
+</ul>
+
+<p>範例</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_acts_as_form_hosted'>acts_as_form_hosted</span> <span class='symbol'>:field_types</span> <span class='op'>=&gt;</span> <span class='lbracket'>[</span><span class='symbol'>:text</span><span class='comma'>,</span> <span class='symbol'>:checkbox</span><span class='rbracket'>]</span>
+</code></pre>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 71</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_acts_as_form_hosted'>acts_as_form_hosted</span><span class='lparen'>(</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span> <span class='rparen'>)</span>
+  
+  <span class='id identifier rubyid_cattr_accessor'>cattr_accessor</span> <span class='symbol'>:default_fields</span><span class='comma'>,</span> <span class='symbol'>:field_types</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_default_fields'>default_fields</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:default_fields</span><span class='rbracket'>]</span>
+  
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_field_types'>field_types</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:field_types</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='lbracket'>[</span><span class='symbol'>:text</span> <span class='comma'>,</span> <span class='symbol'>:textarea</span><span class='comma'>,</span> <span class='symbol'>:select</span><span class='comma'>,</span> <span class='symbol'>:radio</span><span class='comma'>,</span> <span class='symbol'>:checkbox</span><span class='comma'>,</span> <span class='symbol'>:email</span><span class='comma'>,</span> <span class='symbol'>:html</span><span class='comma'>,</span> <span class='symbol'>:attachment</span><span class='comma'>,</span> <span class='symbol'>:date</span><span class='rbracket'>]</span>
+
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:form_fields</span><span class='comma'>,</span>      <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:dependent</span> <span class='op'>=&gt;</span> <span class='symbol'>:destroy</span><span class='comma'>,</span> <span class='symbol'>:order</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dynamic_form_interface_form_fields.position asc, dynamic_form_interface_form_fields.id asc</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FormField</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_text</span><span class='comma'>,</span>       <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldText</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_textarea</span><span class='comma'>,</span>   <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::Textarea</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_select</span><span class='comma'>,</span>     <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:include</span> <span class='op'>=&gt;</span> <span class='symbol'>:custom_options</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldSelect</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_radio</span><span class='comma'>,</span>      <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:include</span> <span class='op'>=&gt;</span> <span class='symbol'>:custom_options</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldRadio</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_checkbox</span><span class='comma'>,</span>   <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:include</span> <span class='op'>=&gt;</span> <span class='symbol'>:custom_options</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldCheckbox</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_email</span><span class='comma'>,</span>      <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldEmail</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_html</span><span class='comma'>,</span>       <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldHtml</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_attachment</span><span class='comma'>,</span> <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldAttachment</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:field_date</span><span class='comma'>,</span>       <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::FieldDate</span><span class='tstring_end'>&quot;</span></span>
+  
+  <span class='id identifier rubyid_accepts_nested_attributes_for'>accepts_nested_attributes_for</span> <span class='symbol'>:form_fields</span><span class='comma'>,</span> <span class='symbol'>:allow_destroy</span> <span class='op'>=&gt;</span> <span class='kw'>true</span>
+  <span class='id identifier rubyid_attr_accessible'>attr_accessible</span> <span class='symbol'>:form_fields</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_field_types'>field_types</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_field_type'>field_type</span><span class='op'>|</span>
+    <span class='id identifier rubyid_accepts_nested_attributes_for'>accepts_nested_attributes_for</span>  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>field_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_field_type'>field_type</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='comma'>,</span> <span class='symbol'>:allow_destroy</span> <span class='op'>=&gt;</span> <span class='kw'>true</span>
+    <span class='id identifier rubyid_attr_accessible'>attr_accessible</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>field_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_field_type'>field_type</span><span class='embexpr_end'>}</span><span class='tstring_content'>_attributes</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_before_validation'>before_validation</span> <span class='symbol'>:check_default_fields</span>
+  <span class='id identifier rubyid_after_save'>after_save</span> <span class='symbol'>:reload_form_fields</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='symbol'>:include</span><span class='comma'>,</span> <span class='const'>HostedInstanceMethods</span><span class='rparen'>)</span>
+
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="acts_as_form_interface-instance_method">
+  
+    - (<tt>Object</tt>) <strong>acts_as_form_interface</strong>(form) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>設定 Model 要填寫的標單</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>form</span>
+      
+      
+        <span class='type'>(<tt>Symbol</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>參考的表單來源</p>
+
+<p>將會設定 model 與紀錄表單 model 的關聯, 例如 Event 定義了表單, Attendee 屬於 Event 且需要填寫 Event 的表單, 只需要寫成</p>
+
+<pre class="code ruby"><code class="ruby"> Class Attendee
+   acts_as_form_interface :event
+ end
+</code></pre>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 112</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_acts_as_form_interface'>acts_as_form_interface</span><span class='lparen'>(</span><span class='id identifier rubyid_form'>form</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='id identifier rubyid_form'>form</span>
+  <span class='id identifier rubyid_belongs_to'>belongs_to</span> <span class='symbol'>:form</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_form'>form</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_camelcase'>camelcase</span><span class='comma'>,</span> <span class='symbol'>:foreign_key</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_form'>form</span><span class='embexpr_end'>}</span><span class='tstring_content'>_id</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_delegate'>delegate</span> <span class='symbol'>:form_fields</span><span class='comma'>,</span> <span class='symbol'>:to</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_form'>form</span> 
+
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:custom_string_values</span><span class='comma'>,</span> <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:applicant</span><span class='comma'>,</span> <span class='symbol'>:dependent</span> <span class='op'>=&gt;</span> <span class='symbol'>:destroy</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::CustomStringValue</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:custom_text_values</span><span class='comma'>,</span>   <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:applicant</span><span class='comma'>,</span> <span class='symbol'>:dependent</span> <span class='op'>=&gt;</span> <span class='symbol'>:destroy</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::CustomTextValue</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:custom_file_values</span><span class='comma'>,</span>   <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:applicant</span><span class='comma'>,</span> <span class='symbol'>:dependent</span> <span class='op'>=&gt;</span> <span class='symbol'>:destroy</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::CustomFileValue</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_has_many'>has_many</span> <span class='symbol'>:custom_option_values</span><span class='comma'>,</span> <span class='symbol'>:as</span> <span class='op'>=&gt;</span> <span class='symbol'>:applicant</span><span class='comma'>,</span> <span class='symbol'>:dependent</span> <span class='op'>=&gt;</span> <span class='symbol'>:destroy</span><span class='comma'>,</span> <span class='symbol'>:class_name</span> <span class='op'>=&gt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>DynamicFormInterface::CustomOptionValue</span><span class='tstring_end'>&quot;</span></span>
+
+  <span class='id identifier rubyid_accepts_nested_attributes_for'>accepts_nested_attributes_for</span> <span class='symbol'>:custom_string_values</span><span class='comma'>,</span> <span class='symbol'>:custom_text_values</span><span class='comma'>,</span> <span class='symbol'>:custom_file_values</span> 
+  <span class='id identifier rubyid_accepts_nested_attributes_for'>accepts_nested_attributes_for</span> <span class='symbol'>:custom_option_values</span><span class='comma'>,</span> <span class='symbol'>:allow_destroy</span> <span class='op'>=&gt;</span> <span class='kw'>true</span>
+
+  <span class='id identifier rubyid_before_validation'>before_validation</span> <span class='symbol'>:check_form_field_values</span>
+
+  <span class='lparen'>(</span><span class='kw'>class</span> <span class='op'>&lt;&lt;</span> <span class='kw'>self</span><span class='semicolon'>;</span> <span class='kw'>self</span><span class='semicolon'>;</span> <span class='kw'>end</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_instance_eval'>instance_eval</span> <span class='lbrace'>{</span>
+    <span class='id identifier rubyid_define_method'>define_method</span> <span class='symbol'>:scope_by_form_field</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_field'>field</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_field'>field</span> <span class='op'>=</span> <span class='const'>FormField</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span><span class='id identifier rubyid_field'>field</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='op'>!</span><span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>FormField</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_value_class'>value_class</span> <span class='op'>=</span> <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_values_class_name'>values_class_name</span><span class='period'>.</span><span class='id identifier rubyid_constantize'>constantize</span>
+     <span class='id identifier rubyid_condition_sql'>condition_sql</span> <span class='op'>=</span> <span class='kw'>if</span> <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span><span class='lparen'>(</span><span class='const'>ColumnOption</span><span class='rparen'>)</span>
+        <span class='id identifier rubyid_value_class'>value_class</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_arel_table'>arel_table</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.id = applicant_id and form_field_id = ? and custom_option_id = ? </span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_sql'>to_sql</span>
+      <span class='kw'>else</span>
+        <span class='id identifier rubyid_value_class'>value_class</span><span class='period'>.</span><span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_arel_table'>arel_table</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'>.id = applicant_id and form_field_id = ? and value like ? </span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_field'>field</span><span class='period'>.</span><span class='id identifier rubyid_id'>id</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_value'>value</span><span class='embexpr_end'>}</span><span class='tstring_content'>%</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_sql'>to_sql</span>
+      <span class='kw'>end</span>
+      <span class='id identifier rubyid_where'>where</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>exists ( </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_condition_sql'>condition_sql</span><span class='embexpr_end'>}</span><span class='tstring_content'> )</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='rbrace'>}</span>
+
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='symbol'>:include</span><span class='comma'>,</span> <span class='const'>InstanceMethods</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Aug 22 15:29:16 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,755 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: DynamicFormInterface::HostedInstanceMethods
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (H)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../DynamicFormInterface.html" title="DynamicFormInterface (module)">DynamicFormInterface</a></span></span>
+     &raquo; 
+    <span class="title">HostedInstanceMethods</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: DynamicFormInterface::HostedInstanceMethods
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/dynamic_form_interface.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>用來欄位所屬 Mdodel 功能</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_default_field-instance_method" title="#build_default_field (instance method)">- (Object) <strong>build_default_field</strong>(field_name) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>透過預設欄位名稱建立預設欄位.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_form_field-instance_method" title="#build_form_field (instance method)">- (Object) <strong>build_form_field</strong>(options) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>建立單一欄位.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#build_form_fields-instance_method" title="#build_form_fields (instance method)">- (Object) <strong>build_form_fields</strong>(fields_options) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>建立多個欄位.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#check_default_fields-instance_method" title="#check_default_fields (instance method)">- (Object) <strong>check_default_fields</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#reload_form_fields-instance_method" title="#reload_form_fields (instance method)">- (Object) <strong>reload_form_fields</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#update_form_field-instance_method" title="#update_form_field (instance method)">- (Object) <strong>update_form_field</strong>(field_id, data) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>更新欄位設定資料.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="build_default_field-instance_method">
+  
+    - (<tt>Object</tt>) <strong>build_default_field</strong>(field_name) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>透過預設欄位名稱建立預設欄位</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 209</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_build_default_field'>build_default_field</span><span class='lparen'>(</span><span class='id identifier rubyid_field_name'>field_name</span><span class='rparen'>)</span>
+  <span class='comment'># clone 資料出來處理避免修改了 class var.
+</span>  <span class='id identifier rubyid_attributes'>attributes</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_default_fields'>default_fields</span><span class='lbracket'>[</span><span class='id identifier rubyid_field_name'>field_name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_clone'>clone</span>
+  <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span> <span class='symbol'>:auto_build</span> <span class='comment'># 移除自動建立的參數
+</span>
+  <span class='comment'># 如果已經有相同名稱的預設欄位存在則不處理
+</span>  <span class='id identifier rubyid_field_name'>field_name</span> <span class='op'>=</span> <span class='id identifier rubyid_field_name'>field_name</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='kw'>unless</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_form_fields'>form_fields</span><span class='period'>.</span><span class='id identifier rubyid_any?'>any?</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_default_field'>default_field</span> <span class='op'>==</span> <span class='id identifier rubyid_field_name'>field_name</span><span class='rbrace'>}</span>
+    <span class='id identifier rubyid_field_type'>field_type</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:type</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:is_required</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:is_required</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span> <span class='op'>?</span> <span class='int'>0</span> <span class='op'>:</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:updateable</span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:updateable</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>  <span class='op'>?</span> <span class='int'>0</span> <span class='op'>:</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:renameable</span><span class='rbracket'>]</span>  <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:renameable</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>  <span class='op'>?</span> <span class='int'>0</span> <span class='op'>:</span> <span class='int'>1</span>
+    <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:destroyable</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:destroyable</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span>  <span class='op'>?</span> <span class='int'>0</span> <span class='op'>:</span> <span class='int'>1</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>field_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_field_type'>field_type</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='symbol'>:default_field</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_field_name'>field_name</span><span class='rparen'>)</span> <span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="build_form_field-instance_method">
+  
+    - (<tt>Object</tt>) <strong>build_form_field</strong>(options) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>建立單一欄位</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:type</span>
+          <span class="type">(<tt>Symbol</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>欄位的類型</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:custom_options_attributes</span>
+          <span class="type">(<tt>Array</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>select, radio, checkbox 型態欄位提供的選項 </p>
+
+<p>例如性別欄位提供的會像是 <code>[ { :name =&gt; &quot;male&quot; }, { :name =&gt; &quot;female&quot; } ]</code></p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:auto_build</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>是否在 Model 建立後自動建立欄位</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:is_required</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>是否為必填欄位</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:title</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>欄位名稱</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:updateable</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>欄位是否可更新</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:destroyable</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>欄位是否可刪除</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:renameable</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'><p>欄位是否可更名</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li><span class='object_link'><a href="ClassMethods.html#acts_as_form_hosted-instance_method" title="DynamicFormInterface::ClassMethods#acts_as_form_hosted (method)">支援的欄位類型</a></span></li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 178</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_build_form_field'>build_form_field</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_field_type'>field_type</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:type</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>text</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span> <span class='comment'># ex. FieldText =&gt; :text, FieldSelect =&gt; :select
+</span>
+  <span class='comment'># 檢查輸入的欄位格式, 是否被允許
+</span>  <span class='kw'>if</span>  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_field_types'>field_types</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span> <span class='id identifier rubyid_field_type'>field_type</span> <span class='rparen'>)</span> 
+    <span class='comment'># 建立欄位
+</span>    <span class='id identifier rubyid_field_class'>field_class</span> <span class='op'>=</span>  <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>dynamic_form_interface::Field_</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_field_type'>field_type</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='period'>.</span><span class='id identifier rubyid_camelcase'>camelcase</span><span class='period'>.</span><span class='id identifier rubyid_constantize'>constantize</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_field_class'>field_class</span><span class='period'>.</span><span class='id identifier rubyid_ancestors'>ancestors</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span> <span class='const'>DynamicFormInterface</span><span class='op'>::</span><span class='const'>FormField</span> <span class='rparen'>)</span> 
+      <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:custom_options_attributes</span><span class='rparen'>)</span>  <span class='kw'>if</span> <span class='id identifier rubyid_field_class'>field_class</span><span class='period'>.</span><span class='id identifier rubyid_superclass'>superclass</span> <span class='op'>!=</span> <span class='const'>DynamicFormInterface</span><span class='op'>::</span><span class='const'>ColumnOption</span>
+      <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:type</span><span class='rparen'>)</span>
+      <span class='kw'>return</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_send'>send</span><span class='lparen'>(</span><span class='id identifier rubyid_field_class'>field_class</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>::</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span><span class='period'>.</span><span class='id identifier rubyid_underscore'>underscore</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_build'>build</span><span class='lparen'>(</span> <span class='id identifier rubyid_options'>options</span> <span class='rparen'>)</span> 
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+
+  <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>wrong field type, only allow </span><span class='embexpr_beg'>#{</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_field_types'>field_types</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="build_form_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>build_form_fields</strong>(fields_options) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>建立多個欄位</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>fields_options</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>欄位設定資料</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+  <p class="tag_title">See Also:</p>
+  <ul class="see">
+    
+      <li>HostedInstanceMethods@build_form_field</li>
+    
+  </ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+154
+155
+156
+157
+158</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 154</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_build_form_fields'>build_form_fields</span><span class='lparen'>(</span><span class='id identifier rubyid_fields_options'>fields_options</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_fields_options'>fields_options</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_options'>options</span><span class='op'>|</span>
+    <span class='id identifier rubyid_build_form_field'>build_form_field</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="check_default_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>check_default_fields</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+226
+227
+228
+229
+230
+231
+232
+233</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 226</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_check_default_fields'>check_default_fields</span>
+  <span class='kw'>if</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_default_fields'>default_fields</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_default_fields'>default_fields</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_default_field_name'>default_field_name</span><span class='comma'>,</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='op'>|</span>
+      <span class='kw'>next</span> <span class='kw'>unless</span> <span class='id identifier rubyid_attributes'>attributes</span><span class='lbracket'>[</span><span class='symbol'>:auto_build</span><span class='rbracket'>]</span> <span class='comment'># 除非設定了自動建立
+</span>      <span class='id identifier rubyid_build_default_field'>build_default_field</span><span class='lparen'>(</span> <span class='id identifier rubyid_default_field_name'>default_field_name</span> <span class='rparen'>)</span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="reload_form_fields-instance_method">
+  
+    - (<tt>Object</tt>) <strong>reload_form_fields</strong> 
+  
+
+  
+
+  
+</h3><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+235
+236
+237</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 235</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_reload_form_fields'>reload_form_fields</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_form_fields'>form_fields</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="update_form_field-instance_method">
+  
+    - (<tt>Object</tt>) <strong>update_form_field</strong>(field_id, data) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>更新欄位設定資料</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>field_id</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>欄位 ID</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>data</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>欄位設定資料</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+198
+199
+200
+201
+202
+203
+204
+205
+206</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/dynamic_form_interface.rb', line 198</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_update_form_field'>update_form_field</span><span class='lparen'>(</span><span class='id identifier rubyid_field_id'>field_id</span><span class='comma'>,</span> <span class='id identifier rubyid_data'>data</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_form_field'>form_field</span> <span class='op'>=</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_form_fields'>form_fields</span><span class='period'>.</span><span class='id identifier rubyid_find'>find</span><span class='lparen'>(</span> <span class='id identifier rubyid_field_id'>field_id</span> <span class='rparen'>)</span>
+  <span class='id identifier rubyid_data'>data</span> <span class='op'>=</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span> <span class='id identifier rubyid_form_field'>form_field</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span><span class='period'>.</span><span class='id identifier rubyid_underscore'>underscore</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span> <span class='rbracket'>]</span> <span class='op'>||</span> <span class='id identifier rubyid_data'>data</span>
+  <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='symbol'>:custom_options_attributes</span><span class='rparen'>)</span>  <span class='kw'>if</span> <span class='id identifier rubyid_form_field'>form_field</span><span class='period'>.</span><span class='id identifier rubyid_class'>class</span><span class='period'>.</span><span class='id identifier rubyid_superclass'>superclass</span> <span class='op'>!=</span> <span class='const'>DynamicFormInterface</span><span class='op'>::</span><span class='const'>ColumnOption</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:custom_options_attributes</span><span class='rbracket'>]</span>
+    <span class='id identifier rubyid_data'>data</span><span class='lbracket'>[</span><span class='symbol'>:custom_options_attributes</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_delete_if'>delete_if</span><span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_x'>x</span><span class='op'>|</span> <span class='id identifier rubyid_x'>x</span><span class='lbracket'>[</span><span class='symbol'>:name</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_blank?'>blank?</span> <span class='rbrace'>}</span>
+  <span class='kw'>end</span> 
+  <span class='id identifier rubyid_form_field'>form_field</span><span class='period'>.</span><span class='id identifier rubyid_update_attributes'>update_attributes</span><span class='lparen'>(</span> <span class='id identifier rubyid_data'>data</span> <span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Thu Aug 22 15:29:16 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

@@ -1,0 +1,332 @@
+find_header: checking for libxml/parser.h... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxml/parser.h>
+/* end */
+
+--------------------
+
+find_header: checking for libxslt/xslt.h... -------------------- yes
+
+"gcc -E -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libxslt/xslt.h>
+/* end */
+
+--------------------
+
+find_header: checking for libexslt/exslt.h... -------------------- yes
+
+"gcc -E -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <libexslt/exslt.h>
+/* end */
+
+--------------------
+
+have_func: checking for iconv_open() in iconv.h... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:7:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <iconv.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))iconv_open; return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xmlParseDoc() in -lxml2... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlParseDoc」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlParseDoc; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic     -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlParseDoc」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlParseDoc(); return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for xsltParseStylesheetDoc() in -lxslt... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xsltParseStylesheetDoc」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xsltParseStylesheetDoc; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xsltParseStylesheetDoc」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xsltParseStylesheetDoc(); return 0; }
+/* end */
+
+--------------------
+
+find_library: checking for exsltFuncRegister() in -lexslt... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「exsltFuncRegister」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))exsltFuncRegister; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「exsltFuncRegister」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { exsltFuncRegister(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlFirstElementChild()... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlFirstElementChild」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlFirstElementChild; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlFirstElementChild」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlFirstElementChild(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlRelaxNGSetParserStructuredErrors」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlRelaxNGSetParserStructuredErrors」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetParserStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlRelaxNGSetParserStructuredErrors」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlRelaxNGSetParserStructuredErrors」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlRelaxNGSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlRelaxNGSetValidStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlRelaxNGSetValidStructuredErrors」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlRelaxNGSetValidStructuredErrors; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlRelaxNGSetValidStructuredErrors」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlRelaxNGSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetValidStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlSchemaSetValidStructuredErrors」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetValidStructuredErrors; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlSchemaSetValidStructuredErrors」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlSchemaSetValidStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for xmlSchemaSetParserStructuredErrors()... -------------------- yes
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:53: 錯誤：「xmlSchemaSetParserStructuredErrors」 undeclared (first use in this function)
+conftest.c:5:53: 附註：each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: 警告：variable 「p」 set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))xmlSchemaSetParserStructuredErrors; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/x86_64-linux -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1/ruby/backward -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/ruby-1.9.1 -I. -I/opt/local/include/libxml2 -I/usr/local/include/libxml2 -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include/libxml2 -I/opt/local/include -I/usr/local/include -I/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/include -I/usr/include -I/usr/include/libxml2    -I/home/tka/.rvm/usr/include -fPIC  -g -DXP_UNIX -O3 -Wall -Wcast-qual -Wwrite-strings -Wconversion -Wmissing-noreturn -Winline conftest.c  -L. -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/opt/local/lib -Wl,-R/opt/local/lib -L/usr/local/lib -Wl,-R/usr/local/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -Wl,-R/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/usr/lib -Wl,-R/usr/lib -L. -L/home/tka/.rvm/usr/lib -rdynamic -Wl,-export-dynamic    -lexslt -lxslt -lxml2  -Wl,-R -Wl,/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -L/home/tka/.rvm/rubies/ruby-1.9.3-p286-perf/lib -lruby -lexslt -lxslt -lxml2  -lpthread -lrt -ldl -lcrypt -lm   -lc "
+conftest.c: In function 「t」:
+conftest.c:5:1: 警告：隱含宣告函式 「xmlSchemaSetParserStructuredErrors」 [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { xmlSchemaSetParserStructuredErrors(); return 0; }
+/* end */
+
+--------------------
+
